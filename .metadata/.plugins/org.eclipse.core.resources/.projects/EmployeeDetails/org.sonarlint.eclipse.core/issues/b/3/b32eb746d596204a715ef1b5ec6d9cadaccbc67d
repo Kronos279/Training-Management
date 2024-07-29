@@ -1,0 +1,14 @@
+
+{
+java:S4684>"@Replace this persistent entity with a simple POJO or DTO object.8∫˙£ÕÑ2b fa5473530e4d1a5a1e1eb53d2fedb10ch
+v
+java:S6813!"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+ç
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").b f5191e08c1c5861e6b48d9da8413b2e5h
+î
+java:S2293K"YReplace the type specification in this constructor call with the diamond operator ("<>").8◊¸ôŒÑ2b f5191e08c1c5861e6b48d9da8413b2e5h
+ß
+java:S1130%"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.8˛ŸñŒÑ2b be3bf3cb01e0cae10d7459a53f1b9edch
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 79859a50f90827b14962268e5f34c589h
+t
+java:S4684%"@Replace this persistent entity with a simple POJO or DTO object.b fa5473530e4d1a5a1e1eb53d2fedb10ch

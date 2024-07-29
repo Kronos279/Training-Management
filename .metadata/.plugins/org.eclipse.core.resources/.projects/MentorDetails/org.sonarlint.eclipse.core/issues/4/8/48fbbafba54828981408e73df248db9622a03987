@@ -1,0 +1,7 @@
+
+d
+java:S2065"0Remove the "transient" modifier from this field.b f15455eb297257c3414c2e6959a92e60h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b f03d098cf08dd3f3f17ecc373cb5a099h
+m
+java:S1128"2Remove this unused import 'org.bson.types.Binary'.8¥ÛúöÖ2b e894dba110f14a9eb21293b2e22d7449h
+v	java:S125"<This block of commented-out lines of code should be removed.8¥ÛúöÖ2b 1f82db330a3dd5aa4491ddeb0d639388h

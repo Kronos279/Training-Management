@@ -1,0 +1,42 @@
+package com.TrainingManagement.MentorDetails.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.TrainingManagement.MentorDetails.entity.Mentor;
+import com.TrainingManagement.MentorDetails.exception.ResourceNotFoundException;
+import com.TrainingManagement.MentorDetails.repository.MentorRepository;
+
+public class MentorServiceImpl {
+	 	@Autowired
+	    private MentorRepository mentorRepository;
+
+	    public List<Mentor> getAllMentors() {
+	        return mentorRepository.findAll();
+	    }
+
+	    public Mentor getMentorByMentoremployeeId(String mentoremployeeId) {
+	        return mentorRepository.findByMentoremployeeId(mentoremployeeId);
+	    }
+
+	    public Mentor createMentor(Mentor mentor) {
+	        return mentorRepository.save(mentor);
+	    }
+
+	    public Mentor updateMentor(String id, Mentor mentorDetails) {
+	        Mentor mentor = mentorRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Mentor not found with id: " + id));
+	        mentor.setMentoremployeeId(mentorDetails.getMentoremployeeId());
+	        mentor.setMentorEmail(mentorDetails.getMentorEmail());
+	        mentor.setMentorFirstName(mentorDetails.getMentorFirstName());
+	        mentor.setMentorLastName(mentorDetails.getMentorLastName());
+	        mentor.setBatchId(mentorDetails.getBatchId());
+	        return mentorRepository.save(mentor);
+	    }
+
+	    public void deleteMentor(String id) {
+	        Mentor mentor = mentorRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Mentor not found with id: " + id));
+	        mentorRepository.delete(mentor);
+	    }
+
+}

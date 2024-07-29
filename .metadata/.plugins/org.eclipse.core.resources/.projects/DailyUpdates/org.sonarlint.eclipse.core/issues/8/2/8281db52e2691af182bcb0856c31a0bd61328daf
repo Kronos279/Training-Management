@@ -1,0 +1,4 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 5ac684c1429f9c5ae228b80015899be7h
+
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.8ñßïêÖ2b aaaba253df39297822d324a05b763895h

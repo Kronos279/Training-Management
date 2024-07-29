@@ -1,0 +1,6 @@
+
+Ö
+java:S1192"QDefine a constant instead of duplicating this literal "Course not found" 4 times.b c6339713bfcea540117450ca1e63802fh
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b ed109e2b42e2d34d3e39da4626a1a0d2h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h

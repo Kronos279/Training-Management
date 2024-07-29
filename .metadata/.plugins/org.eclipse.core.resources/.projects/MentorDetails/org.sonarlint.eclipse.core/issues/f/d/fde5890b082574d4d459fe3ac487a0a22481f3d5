@@ -1,0 +1,8 @@
+
+t
+java:S4684/"@Replace this persistent entity with a simple POJO or DTO object.b d67882df77b4d316c3cf447d584cd088h
+t
+java:S4684*"@Replace this persistent entity with a simple POJO or DTO object.b 23cbeacdea458e9ced9807d6cbe2f4d6h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b a92903594f6b432051b8515ccb0be867h

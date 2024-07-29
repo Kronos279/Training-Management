@@ -1,0 +1,11 @@
+
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+î	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.8Ωå«¯ã2b a40fabc14f538643fd0b74c33667011eh
+ë
+java:S3655&"VCall "credentials.isPresent()" or "!credentials.isEmpty()" before accessing the value.8èöﬁ¯ã2b d3ed68f7315b7e72b8d886b2278fcac3h
+ã	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8ëœﬂ¯ã2b dcc97e32ee2155cd3544413ac8b6f685h

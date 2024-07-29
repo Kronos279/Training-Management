@@ -1,0 +1,5 @@
+
+Å	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 687d566bd9976f7439c64c130edd3258h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b b9ee2ed5c13c8b70ca49498d5763f1cfh
+e
+java:S1128"*Remove this unused import 'java.util.Map'.8û—ªÜ2b 03ec136776d19432e0a31b46ebe07d1ah

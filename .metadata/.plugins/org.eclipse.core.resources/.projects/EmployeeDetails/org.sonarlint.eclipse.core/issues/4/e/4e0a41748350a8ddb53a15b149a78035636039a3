@@ -1,0 +1,11 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8≠¥æ¿Ö2b 0132ec8cee01c5dd244e1a60fe6448a1h
+c	java:S108l")Either remove or fill this block of code.8⁄ˆªÑá2b f95b70fdc3088560732a5ac135644506h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ù±ö¿Ö2b 0132ec8cee01c5dd244e1a60fe6448a1h
+ç
+java:S3776b"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.8ºª◊Ü2b c1edafd9108b534b10c81c2341277231h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 24747a4fb2ca31734001eb817c21286dh
+o
+java:S2864x"4Iterate over the "entrySet" instead of the "keySet".8»ºÀÑá2b d55669822f1a8cf72ec1911e462a54ebh

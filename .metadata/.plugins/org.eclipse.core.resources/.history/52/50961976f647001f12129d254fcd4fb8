@@ -1,0 +1,146 @@
+package com.TrainingManagement.BatchDetails.serviceImpl;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.TrainingManagement.BatchDetails.clients.EmployeeClient;
+import com.TrainingManagement.BatchDetails.entity.Announcement;
+import com.TrainingManagement.BatchDetails.entity.Batch;
+import com.TrainingManagement.BatchDetails.entity.Employee;
+import com.TrainingManagement.BatchDetails.repository.BatchRepository;
+import com.TrainingManagement.BatchDetails.service.BatchService;
+import com.TrainingManagement.BatchDetails.util.ApplicationUtil;
+
+@Service
+public class BatchServiceImpl implements BatchService {
+
+	@Autowired
+	private BatchRepository batchRepository;
+	
+	@Autowired
+	EmployeeClient client;
+
+	@Override
+	public List<Batch> getBatchesByMentorId(String mentorId) {
+		return batchRepository.findByMentorId(mentorId);
+	}
+
+	@Override
+	public Optional<Batch> getBatchById(String batchId) {
+		Optional<Batch> batchopt =  batchRepository.findById(batchId);
+		if(batchopt.isPresent()) {
+			Batch batch = batchopt.get();
+			List<Employee> list = client.getEmployeesByBatchId(batchId);
+			List<String> menteeIds = new ArrayList<>();
+			list.stream().forEach((employee)-> menteeIds.add(employee.getEmployeeId()));
+			batch.setMenteeIds(menteeIds);
+			batchRepository.save(batch);
+		}
+		return batchRepository.findById(batchId);
+	}
+
+	@Override
+	public Batch saveBatch(Batch batch) {
+		batch.setBatchId(ApplicationUtil.generateBatchId());
+		return batchRepository.save(batch);
+	}
+
+	@Override
+	public void deleteBatch(String batchId) {
+		batchRepository.deleteById(batchId);
+	}
+
+	@Override
+	public Batch addMenteeToBatch(String batchId, String mentorId, String menteeId) {
+		Optional<Batch> batchOpt = batchRepository.findById(batchId);
+		if (batchOpt.isPresent()) {
+			Batch batch = batchOpt.get();
+			if (batch.getMentorId().equals(mentorId)) {
+				List<String> menteeIds = batch.getMenteeIds();
+				if (!menteeIds.contains(menteeId)) {
+					menteeIds.add(menteeId);
+					batch.setMenteeIds(menteeIds);
+					return batchRepository.save(batch);
+				}
+			} else {
+				throw new RuntimeException("Unauthorized action");
+			}
+		} else {
+			throw new RuntimeException("Batch not found");
+		}
+		return null;
+	}
+
+	@Override
+	public Batch updateBatch(String batchId, Batch updatedBatch) {
+		Optional<Batch> existingBatchOptional = batchRepository.findById(batchId);
+
+		if (!existingBatchOptional.isPresent()) {
+			throw new RuntimeException("No Batch Found");
+		}
+		Batch existingBatch = existingBatchOptional.get();
+
+		existingBatch.setMentorId(
+				updatedBatch.getMentorId() != null ? updatedBatch.getMentorId() : existingBatch.getMentorId());
+		existingBatch.setStartDate(
+				updatedBatch.getStartDate() != null ? updatedBatch.getStartDate() : existingBatch.getStartDate());
+		existingBatch
+				.setEndDate(updatedBatch.getEndDate() != null ? updatedBatch.getEndDate() : existingBatch.getEndDate());
+		existingBatch
+				.setStatus(updatedBatch.getStatus() != null ? updatedBatch.getStatus() : existingBatch.getStatus());
+		existingBatch.setDescription(
+				updatedBatch.getDescription() != null ? updatedBatch.getDescription() : existingBatch.getDescription());
+		existingBatch.setMenteeIds(
+				updatedBatch.getMenteeIds() != null ? updatedBatch.getMenteeIds() : existingBatch.getMenteeIds());
+
+		batchRepository.save(existingBatch);
+
+		return existingBatch;
+	}
+
+	@Override
+	public int getEmployeeCountInBatch(String batchId) {
+		return client.getEmployeeCountInBatch(batchId);
+	}
+
+	@Override
+	public Batch addAnnouncementToBatch(String batchId, String announcement) {
+		Optional<Batch> batchopt = batchRepository.findById(batchId);
+		if(batchopt.isPresent()) {
+			Batch batch = batchopt.get();
+			Announcement newAnnouncement = new Announcement();
+			UUID uuid = UUID.randomUUID();
+			newAnnouncement.setAnnouncementId(uuid.toString());
+		    newAnnouncement.setCreationDate(LocalDate.now());
+		    newAnnouncement.setAnnouncement(announcement);
+		    batch.getAnnouncements().add(newAnnouncement);
+		    return batchRepository.save(batch);
+		}
+		throw new RuntimeException("No Batch found with the given Batch Id"+batchId);
+	}
+
+	@Override
+	public List<Announcement> getAnnouncement(String batchId) {
+		Optional<Batch> batchopt = batchRepository.findById(batchId);
+		if(batchopt.isPresent()) {
+			Batch batch = batchopt.get();
+			List<Announcement> announcements = batch.getAnnouncements();
+			return announcements;
+		}
+		else{
+			throw new RuntimeException("No Batch Found with BatchId "+batchId);
+		}
+	}
+
+	@Override
+	public void deleteAnnouncement(String batchId, String announcementId) {
+		Optional<Announcement> announcement = batchRepository.findById(batchId);
+		
+	}
+}

@@ -1,0 +1,10 @@
+
+_
+java:S1172$"+Remove this unused method parameter "role".b 29a7e96467b69a9f5a93332e29e9b0deh
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.8ï¹Çø‹2b a40fabc14f538643fd0b74c33667011eh
+n
+java:S1128"3Remove this unused import 'io.jsonwebtoken.Claims'.8åû‹2b 033e3c831264366fc9821d84b86354e0h
+k
+java:S1128"0Remove this unused import 'io.jsonwebtoken.Jws'.8åû‹2b d9dd92b5508300622f183e4b53838295h
+‘
+java:S1128	"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.8åû‹2b 2e43daa1aeb80903a22da48ad1ded6edh

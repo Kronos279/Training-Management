@@ -1,0 +1,4 @@
+
+â
+java:S1104"UMake isSecured a static final constant or non-public and provide accessors if needed.b a8b67ed40c93036a63ac40fa22d85b3ah
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 6b1a34aa531e7768eb3e7289c9b09ce9h

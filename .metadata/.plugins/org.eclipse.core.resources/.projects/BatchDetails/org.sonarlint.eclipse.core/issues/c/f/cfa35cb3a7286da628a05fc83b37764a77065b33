@@ -1,0 +1,17 @@
+
+Ä	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.8Ç§ä∂á2b 15452a9b0f2356c3dabe720a67728b3dh
+y	java:S112}"FDefine and throw a dedicated exception instead of using a generic one.b 15452a9b0f2356c3dabe720a67728b3dh
+°
+java:S1488Ö"eImmediately return this expression instead of assigning it to the temporary variable "announcements".8ºﬁá∂á2b c525dd57e9cc6c3848bdd952fd1803beh
+y	java:S112U"FDefine and throw a dedicated exception instead of using a generic one.b 15452a9b0f2356c3dabe720a67728b3dh
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+Å	java:S112â"FDefine and throw a dedicated exception instead of using a generic one.8é¥∏ûá2b 15452a9b0f2356c3dabe720a67728b3dh
+q
+java:S1611)"6Remove the parentheses around the "employee" parameter8ıÙÊÜÜ2b 84c40473414caf2ed4a7b1283e48bbf4h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b ad9639834bd33c20023a0ff5c54539afh
+Ä	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.8âÖü Ö2b 15452a9b0f2356c3dabe720a67728b3dh
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ﬂÔ≤ÜÜ2b 0132ec8cee01c5dd244e1a60fe6448a1h
+e
+java:S5413ï")Verify that "remove()" is used correctly.8Ó‰ÌÙç2b 560ec84ecf21930bbe938bee51264da3h

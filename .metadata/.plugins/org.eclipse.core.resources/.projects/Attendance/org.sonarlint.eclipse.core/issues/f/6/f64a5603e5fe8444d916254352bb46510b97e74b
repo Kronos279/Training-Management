@@ -1,0 +1,25 @@
+
+h
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.b 275b9778ea2ddb3b8c20ea1d3578f784h
+l
+java:S1854b"8Remove this useless assignment to local variable "list".b 320888f3b2717f207dbb6c3c16f8cb69h
+Z
+java:S1452i"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh
+ç
+java:S2293k"YReplace the type specification in this constructor call with the diamond operator ("<>").b dfc122e638cdbec4569789ff846a95f7h
+Z
+java:S1452?"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh
+l
+java:S1854k"8Remove this useless assignment to local variable "list".b 320888f3b2717f207dbb6c3c16f8cb69h
+Z
+java:S1452`"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh
+ç
+java:S2293b"YReplace the type specification in this constructor call with the diamond operator ("<>").b dfc122e638cdbec4569789ff846a95f7h
+Z
+java:S1452O"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh
+v
+java:S6813""BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+Z
+java:S14523"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh
+Z
+java:S1452'"&Remove usage of generic wildcard type.b d1457b72c3fb323a2671125aef3eab5dh

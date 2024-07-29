@@ -1,0 +1,5 @@
+
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.8Šæ¾ø‹2b 6cb965620f038bbe20df18c772c2820dh
+f
+java:S1168"+Return an empty collection instead of null.8¤µÎø‹2b 37a6259cc0c1dae299a7866489dff0bdh
+	java:S116"VRename this field "employee_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8©´Òø‹2b dcc97e32ee2155cd3544413ac8b6f685h

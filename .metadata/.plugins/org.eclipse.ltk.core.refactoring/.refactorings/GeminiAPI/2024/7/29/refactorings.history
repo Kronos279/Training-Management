@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.TrainingManagement.ChatGPT&apos; to &apos;com.TrainingManagement.Gemini&apos;&#x0D;&#x0A;- Original project: &apos;ChatGPT&apos;&#x0D;&#x0A;- Original element: &apos;ChatGPT/src/main/java/com.TrainingManagement.ChatGPT&apos;&#x0D;&#x0A;- Renamed element: &apos;ChatGPT/src/main/java/com.TrainingManagement.Gemini&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.TrainingManagement.ChatGPT&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.TrainingManagement.ChatGPT" name="com.TrainingManagement.Gemini" qualified="false" references="true" stamp="1721038311309" textual="false" version="1.0"/>
+</session>

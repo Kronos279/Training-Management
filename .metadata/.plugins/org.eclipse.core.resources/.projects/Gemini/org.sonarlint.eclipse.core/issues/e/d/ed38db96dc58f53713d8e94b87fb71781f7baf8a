@@ -1,0 +1,8 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b afffbc4b5f7b7a63805f457072576898h
+Ä	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.8Æç©◊ã2b 15452a9b0f2356c3dabe720a67728b3dh
+ï	java:S116"[Rename this field "API_URL_TEMPLATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8Æç©◊ã2b ae65638a38f9c58ce69e1b3a225f6b3dh
+\
+java:S1170"!Make this final field static too.8Æç©◊ã2b ae65638a38f9c58ce69e1b3a225f6b3dh
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8Æç©◊ã2b 0132ec8cee01c5dd244e1a60fe6448a1h
